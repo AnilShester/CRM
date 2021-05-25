@@ -1,0 +1,66 @@
+{% extends "accounts/main.html" %}
+{% load static %}
+
+
+{% block contents %}
+    <div class="row">
+      <div class="col-md-5">
+          <h5>Customers</h5>
+          <hr>
+            <div class=" card card-body">
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Orders</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          </div>
+          
+      </div>
+      <div class="col-md-7">
+        <h5>Last 5 Orders</h5>
+        <hr>
+        <div class=" card card-body">
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Date Ordered</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Updates</th>
+                    <th scope="col">Remove</th>
+                  </tr>
+                </thead>             
+              </table>
+      </div>
+      </div>
+    </div>
+
+{% endblock %}
